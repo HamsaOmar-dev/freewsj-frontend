@@ -43,7 +43,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const res = await axios.get("https://freewsj-backend.vercel.app/");
+  const res = await axios.get("https://freewsj-backend.vercel.app/articles");
   const data = await res.data;
 
   const paths = data.map((article) => ({
