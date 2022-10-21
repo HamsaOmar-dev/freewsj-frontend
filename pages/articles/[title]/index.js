@@ -35,7 +35,7 @@ function Article({ data }) {
 
 export async function getStaticProps(context) {
   const res = await axios.get(
-    "https://freewsj-backend.vercel.app/" + context.params.title
+    "https://freewsj-backend.vercel.app/articles/" + context.params.title
   );
   const data = await res.data;
 
