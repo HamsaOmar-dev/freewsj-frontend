@@ -15,7 +15,7 @@ function Home({ data }) {
 
       <div className={styles.homeTable}>
         <table>
-          {data.reverse().map((article, index) => {
+          {data.map((article, index) => {
             return (
               <tr key={index}>
                 <td>
