@@ -49,7 +49,7 @@ function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const res = await axios.get("https://freewsj-backend.vercel.app/");
+  const res = await axios.get("https://api.freewsj.com/");
   const data = res.data;
 
   return { props: { data } };

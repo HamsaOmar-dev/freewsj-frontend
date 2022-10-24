@@ -44,7 +44,7 @@ function Articles({ data }) {
 }
 
 export async function getServerSideProps() {
-  const res = await axios.get("https://freewsj-backend.vercel.app/articles");
+  const res = await axios.get("https://api.freewsj.com/articles");
   const data = res.data;
 
   return { props: { data } };
