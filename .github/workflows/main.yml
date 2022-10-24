@@ -1,5 +1,5 @@
 #Triggered for deployment status changes
-name: Deployment Failure notification
+name: Deployment Failure Notification
 on: [deployment_status]
 
 jobs:
