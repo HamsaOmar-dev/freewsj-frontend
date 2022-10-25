@@ -47,7 +47,7 @@ export async function getStaticPaths() {
   const data = await res.data;
 
   const paths = data.map((article) => ({
-    params: { title: article.title },
+    params: { title: article?.title },
   }));
 
   return { paths, fallback: false };
